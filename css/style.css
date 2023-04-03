@@ -318,12 +318,14 @@ padding-bottom: var(--section-padding);
 .portfolio .shuffle ul{
     display: flex;
     justify-content: center;
+    
 }
 
 .portfolio .shuffle ul li{
-    padding: 10px;
+    padding: 10px 20px;
+    margin-left: 10px;
 }
-.portfolio .shuffle ul li.active{
+.portfolio .shuffle ul li.active , .portfolio .shuffle ul li:hover{
     background-color: var(--main-color);
     color: white;
 }
@@ -332,6 +334,7 @@ padding-bottom: var(--section-padding);
    display: flex;
    flex-wrap: wrap;
    margin-top: 60px;
+   background-color: #030d10;
 }
 
 .portfolio .image-container .box{
@@ -355,6 +358,7 @@ padding-bottom: var(--section-padding);
    transition: 5s;
    transition: ease-in;
    filter: none;
+   
  }
 
 .portfolio .more {
