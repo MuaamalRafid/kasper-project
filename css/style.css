@@ -383,7 +383,6 @@ padding-bottom: var(--section-padding);
 .video .text{
     text-align: center;
     padding: 10px;
-   
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -754,3 +753,217 @@ margin-bottom: 40px;
     margin: 10px auto;
 }
 /* End Pricing  */
+
+/* Start Subscribe */
+.subscribe {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url("../media/image/subscribe.jpg");
+    background-size: cover;
+    position: relative;
+    color: white;
+  }
+
+  .subscribe::before {
+   content: "";
+   background-color: rgb(0 0 0 / 50%);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   position: absolute;
+  }
+
+  .subscribe .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .subscribe form {
+    display: flex;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .subscribe form input[type="email"] {
+   background: none;
+   border: 1px solid white;
+   border-right: none;
+   padding: 20px 20px 20px 60px;
+   outline: none;
+   caret-color: var(--main-color);
+  }
+  .subscribe form ::placeholder {
+    color: whitesmoke;
+   }
+  .subscribe form input[type="submit"] {
+  background-color:var(--main-color) ;
+  color: white;
+  border: 1px solid white;
+  border-left: none;
+  padding: 20px;
+  width: 120px;
+  cursor: pointer;
+  }
+
+  .subscribe form i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    color: #ccc;
+    }
+
+    .subscribe .container p {
+       margin-left: 25px;
+       line-height: 2;
+    }
+
+  /* End Subscribe */
+
+ /* Start Contact us */
+  .contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
+  .contact .content{
+   display: flex;
+   justify-content: space-between;
+  }
+
+  .contact .content form{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+   }
+
+   .contact .content form input ,
+   .contact .content form textarea {
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 768px;
+    border: 1px solid #ccc;
+    outline: none;
+   }
+
+   .contact .content form textarea {
+    height: 170px;
+   }
+
+   .contact .content form input[type='submit'] {
+    width: 20%;
+    align-self: flex-end;
+    background-color: var(--main-color);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+   }
+
+   .contact .content .info {
+    flex-basis: 25%;
+    }
+
+   .contact .content .info h4:nth-of-type(1){
+   text-transform: uppercase;
+   margin-bottom: 30px;
+   font-weight: 500;
+   font-size: 18px;
+   }
+
+   .contact .content .info span{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #777;
+    display: block;
+    }
+
+    .contact .content .info h4:nth-of-type(2){
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        margin-top: 85px;
+        font-weight: 500;
+        font-size: 18px;
+        display: block;
+    }
+
+    .contact .content .info address{
+       color: #777;
+       line-height: 2;
+    }
+/*  End Contact us  */
+
+
+/* Start Footer  */
+
+footer{
+    padding-top: calc(var(--section-padding) / 2);
+    padding-bottom: calc(var(--section-padding) / 2);
+    background-image: url('../media/image/subscribe.jpg');
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+footer::before{
+    content: "";
+    background-color: rgb(0 0 0 / 70%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+footer .container{
+    position: relative;
+}
+
+footer img{
+    margin-bottom: 20px;
+    
+}
+
+footer p:not(.copyright){
+    margin: 20px auto;
+    font-size: 25px;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    width: fit-content;
+}
+
+footer .social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social li{
+ padding: 15px;
+
+}
+footer .social li i{
+   font-size: 20px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+footer .social li i:hover{
+    font-size: 25px;
+    color: var(--main-color);
+    padding: 0;
+    margin: 0;
+    
+ }
+
+footer .copyright{
+    margin-top: 40px;
+}
+
+
+/* End Footer  */
